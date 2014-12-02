@@ -3,7 +3,7 @@
 
 #######################################
 #
-#This script is used in conjunction with
+#This script is used in conjuction with
 #4_wash_wps_detector.sh this should be
 #run after that script and after you
 #have collected the bssid, essid and

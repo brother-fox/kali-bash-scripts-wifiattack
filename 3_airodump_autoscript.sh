@@ -40,7 +40,7 @@ echo "Capture commencing..."
 sleep 3
 
 mkdir /usr/airodump_cap
-airodump-ng --ivs -w /usr/airodump_cap/$NAMEPREFIX --bssid $APBSSID --channel $APCHANNEL $CAPINTERFACE
+airodump-ng --ivs -w /usr/airodump_cap/$APBSSID/$NAMEPREFIX --bssid $APBSSID --channel $APCHANNEL $CAPINTERFACE
 
 else
 
@@ -54,12 +54,27 @@ sleep 7
 echo "Capture commencing..."
 sleep 3
 mkdir /usr/airodump_cap
-airodump-ng -w /usr/airodump_cap/$NAMEPREFIX --bssid $APBSSID --channel $APCHANNEL $CAPINTERFACE
+airodump-ng -w /usr/airodump_cap/$APBSSID/$NAMEPREFIX --bssid $APBSSID --channel $APCHANNEL $CAPINTERFACE
 
 fi
 #
 #end of ivs capture mode
 #
+
+
+echo "Files have been saved under /usr/airodump_cap/"
+
+sleep 10
+
+
+
+
+
+
+
+
+
+
 
 
 
