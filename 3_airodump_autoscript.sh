@@ -39,7 +39,7 @@ sleep 10
 echo "Capture commencing..."
 sleep 3
 
-mkdir /usr/airodump_cap
+mkdir /usr/airodump_cap/$APBSSID
 airodump-ng --ivs -w /usr/airodump_cap/$APBSSID/$NAMEPREFIX --bssid $APBSSID --channel $APCHANNEL $CAPINTERFACE
 
 else
@@ -53,7 +53,7 @@ sleep 7
 
 echo "Capture commencing..."
 sleep 3
-mkdir /usr/airodump_cap
+mkdir /usr/airodump_cap/$APBSSID
 airodump-ng -w /usr/airodump_cap/$APBSSID/$NAMEPREFIX --bssid $APBSSID --channel $APCHANNEL $CAPINTERFACE
 
 fi
