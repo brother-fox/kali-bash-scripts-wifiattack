@@ -52,12 +52,12 @@ case $VERBOSEORNOT in
 ###check for verbosity quiet
 [Qq] )  ###then check continuation or not
 	if [ "$CONTINUATION" = "Y" ] || [ "$CONTINUATION" = "y" ]; then
-	reaver -i $WIFIINTERFACE -b $APBSSID -c $APCHANNEL -q
+	reaver -i $WIFIINTERFACE -b $APBSSID -c $APCHANNEL -q -s /etc/reaver/$APBSSID
 
 	### to answer the question of continue or not
 	
 	else
-	reaver -i $WIFIINTERFACE -b $APBSSID -c $APCHANNEL -q y
+	reaver -i $WIFIINTERFACE -b $APBSSID -c $APCHANNEL -q
 	###no continue
 
 	fi ###end of if
@@ -66,7 +66,7 @@ case $VERBOSEORNOT in
 ###check for verbosity yes
 [Vv] ) ###then check if continuation or not
 	if [ "$CONTINUATION" = "Y" ] || [ "$CONTINUATION" = "y" ]; then
-	reaver -i $WIFIINTERFACE -b $APBSSID -c $APCHANNEL -vv y
+	reaver -i $WIFIINTERFACE -b $APBSSID -c $APCHANNEL -vv -s /etc/reaver/
 	y
 	### yes to continue with crack
 	
